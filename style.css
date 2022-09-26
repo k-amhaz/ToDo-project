@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  background-color: rgb(243, 243, 243);
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form {
+  width: 80%;
+  background-color: gainsboro;
+  height: 130px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form .input {
+  width: 420px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px;
+  outline: none !important;
+  border: none;
+}
+.input:focus {
+  border: rgb(11, 141, 141) solid 2px;
+}
+.form .add {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(11, 141, 141);
+  transition: 0.3s;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+}
+.add:hover {
+  background-color: rgb(0, 82, 82);
+  transform: scale(1.1);
+}
+
+.tasks {
+  width: 80%;
+  min-height: 100px;
+  background-color: gainsboro;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.tasks .task {
+  width: 98%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: rgb(0, 82, 82);
+  transition: 0.3s;
+  margin: 5px 0;
+  scroll-behavior: smooth;
+}
+.task:hover {
+  background-color: rgb(250, 250, 250);
+}
