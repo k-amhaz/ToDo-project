@@ -1,6 +1,7 @@
 let input = document.querySelector(".input");
 let submit = document.querySelector(".add");
 let tasksDiv = document.querySelector(".tasks");
+let clsButton = document.querySelector("button");
 
 // Empty Array To Store The Tasks
 let arrayOfTasks = [];
@@ -110,3 +111,8 @@ function toggleStatusTaskWith(taskId) {
   }
   addDataToLocalStorageFrom(arrayOfTasks);
 }
+
+clsButton.addEventListener("click", (e) => {
+  localStorage.removeItem("tasks");
+  tasksDiv.innerHTML = "";
+});
